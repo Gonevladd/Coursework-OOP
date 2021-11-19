@@ -1,0 +1,7 @@
+Only .txt files are supported. Each field must be separated by one space. After the last field in the ribbon, a comma is placed and goes to the following line. In the character fields (Brand, Color), you can use any characters, between which you do not need to put spaces (Dark-Blue). The program does not support valid values in the fields (Price, Power), so it is not desirable to write as follows (123,89) or (123.89). Blank ribbons between lines are also not allowed. There should be no blank tape after the last line.
+
+Example of filling the input file:Brand Color Price Power,
+Brand Color Price Power,
+Brand Color Price Power,
+...
+Brand Color Price Power,
