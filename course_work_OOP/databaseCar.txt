@@ -1,0 +1,6 @@
+Audi White 50420 700,
+BWM Dark-Blue 60512 750,
+Porch Red 63500 690,
+Lamborgini Yellow 803901 1200,
+Audi Grey 48500 490,
+Ford Black 5402 830

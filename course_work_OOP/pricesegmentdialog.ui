@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PriceSegment</class>
+ <widget class="QDialog" name="PriceSegment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Car Spreadsheet</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Images.qrc">
+    <normaloff>:/icons/carIcon</normaloff>:/icons/carIcon</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #F4F1BB
+
+</string>
+  </property>
+  <widget class="QLabel" name="Shape2">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>10</y>
+     <width>393</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Shapes/Shape2.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Shape3">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>140</y>
+     <width>113</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Shapes/Shape3.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Shape3_2">
+   <property name="geometry">
+    <rect>
+     <x>296</x>
+     <y>220</y>
+     <width>113</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Shapes/Shape3.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Shape2_2">
+   <property name="geometry">
+    <rect>
+     <x>-64</x>
+     <y>-50</y>
+     <width>137</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Shapes/Shape2.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Shape4">
+   <property name="geometry">
+    <rect>
+     <x>-488</x>
+     <y>-250</y>
+     <width>609</width>
+     <height>891</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Shapes/Shape4.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Shape2_3">
+   <property name="geometry">
+    <rect>
+     <x>-56</x>
+     <y>30</y>
+     <width>153</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Shapes/Shape2.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="endSegmentLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>70</y>
+     <width>153</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI Semilight</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #E6EBE0;
+font: 12pt &quot;Yu Gothic UI Semilight&quot;;
+
+
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="beginSegmentLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>20</y>
+     <width>145</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI Semilight</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #E6EBE0;
+font: 12pt &quot;Yu Gothic UI Semilight&quot;;
+
+
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelPushButton">
+   <property name="geometry">
+    <rect>
+     <x>304</x>
+     <y>266</y>
+     <width>80</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI Semilight</family>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:#F4F1BB;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(255, 251, 195);
+}</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okPushButton">
+   <property name="geometry">
+    <rect>
+     <x>209</x>
+     <y>266</y>
+     <width>80</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI Semilight</family>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:#F4F1BB;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(255, 251, 195);
+}</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>61</y>
+     <width>204</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI Semilight</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Yu Gothic UI Semilight&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Put a end of a segment: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>11</y>
+     <width>219</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI Semilight</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Yu Gothic UI Semilight&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Put a begin of a segment: </string>
+   </property>
+  </widget>
+  <zorder>Shape2</zorder>
+  <zorder>Shape4</zorder>
+  <zorder>Shape2_3</zorder>
+  <zorder>Shape2_2</zorder>
+  <zorder>Shape3_2</zorder>
+  <zorder>endSegmentLineEdit</zorder>
+  <zorder>beginSegmentLineEdit</zorder>
+  <zorder>cancelPushButton</zorder>
+  <zorder>Shape3</zorder>
+  <zorder>okPushButton</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label</zorder>
+ </widget>
+ <resources>
+  <include location="Images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
