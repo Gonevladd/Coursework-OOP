@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>925</width>
+    <height>617</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>775</width>
+    <height>465</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Car Spreadsheet</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Images.qrc">
+    <normaloff>:/icons/carIcon</normaloff>:/icons/carIcon</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #F4F1BB
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="font">
+       <font>
+        <family>Yu Gothic UI Semilight</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="tabletTracking">
+       <bool>true</bool>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#EEEEEE;
+font: 12pt &quot;Yu Gothic UI Semilight&quot;;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::NoDragDrop</enum>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderCascadingSectionResizes">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>№</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Brand</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Color</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Price</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Powerful</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="backPushButton">
+        <property name="font">
+         <font>
+          <family>Yu Gothic UI Semilight</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background-color:#F4F1BB;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(255, 251, 195);
+}</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>925</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menu_Instruction">
+     <property name="title">
+      <string>&amp;Instruction</string>
+     </property>
+     <widget class="QMenu" name="menu_With_UI">
+      <property name="title">
+       <string>&amp;With UI</string>
+      </property>
+      <addaction name="actionUkrainian_2"/>
+      <addaction name="action_English_3"/>
+     </widget>
+     <widget class="QMenu" name="menu_Text">
+      <property name="title">
+       <string>&amp;Text </string>
+      </property>
+      <addaction name="action_Ukrainian"/>
+      <addaction name="action_English"/>
+     </widget>
+     <addaction name="menu_With_UI"/>
+     <addaction name="menu_Text"/>
+    </widget>
+    <widget class="QMenu" name="menu_File_Template">
+     <property name="title">
+      <string>&amp;File Template</string>
+     </property>
+     <addaction name="actionUkrainian"/>
+     <addaction name="action_English_2"/>
+    </widget>
+    <addaction name="actionOpen_from"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="separator"/>
+    <addaction name="menu_Instruction"/>
+    <addaction name="menu_File_Template"/>
+   </widget>
+   <widget class="QMenu" name="menuSearch">
+    <property name="title">
+     <string>&amp;Search</string>
+    </property>
+    <addaction name="actionCar"/>
+    <addaction name="actionFind_brand"/>
+    <addaction name="actionPrice_Segment"/>
+    <addaction name="actionPowerful_Red"/>
+    <addaction name="actionCheapest_Black"/>
+    <addaction name="actionMax_Price_Color"/>
+    <addaction name="actionMin_Price_Color"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSearch"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #326273
+</string>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="features">
+    <set>QDockWidget::AllDockWidgetFeatures</set>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <widget class="QPushButton" name="findEqualPriceDifferentColorpushButton">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>130</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Yu Gothic UI Semilight</family>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="whatsThis">
+      <string/>
+     </property>
+     <property name="accessibleDescription">
+      <string extracomment="Fuck"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#9BC1BC;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(166, 206, 201);
+}\</string>
+     </property>
+     <property name="text">
+      <string>Find brand </string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="priceSegmentPushButton">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>250</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#9BC1BC;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(166, 206, 201);
+}\</string>
+     </property>
+     <property name="text">
+      <string>Price Segment</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="findPowerfulRedCarPushButton">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>310</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#9BC1BC;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(166, 206, 201);
+}\</string>
+     </property>
+     <property name="text">
+      <string>Powerful Red</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="findCheapestBlackCarPushButton">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>370</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#9BC1BC;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(166, 206, 201);
+}\</string>
+     </property>
+     <property name="text">
+      <string>Cheapest Black</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="findMaxPriceColorPushButton">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>430</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#9BC1BC;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(166, 206, 201);
+}\</string>
+     </property>
+     <property name="text">
+      <string>Max Price Color</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="findMinPriceColorPushButton">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>490</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#9BC1BC;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(166, 206, 201);
+}</string>
+     </property>
+     <property name="text">
+      <string>Min Price Color</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="openPushButton">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>10</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#9BC1BC;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(166, 206, 201);
+}</string>
+     </property>
+     <property name="text">
+      <string>Open...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="savePushButton">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>70</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#9BC1BC;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(166, 206, 201);
+}</string>
+     </property>
+     <property name="text">
+      <string>Save as</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cheapAndLeastPowerfulPushButton">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>190</y>
+       <width>89</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color:#9BC1BC;
+	font: 8pt &quot;Yu Gothic UI Semilight&quot;;
+}
+QPushButton:pressed{
+	background-color:rgb(166, 206, 201);
+}</string>
+     </property>
+     <property name="text">
+      <string>Cheapest car</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <action name="actionOpen_from">
+   <property name="text">
+    <string>&amp;Open...</string>
+   </property>
+   <property name="toolTip">
+    <string>Open from a file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionCar">
+   <property name="text">
+    <string>&amp;Cheapest and least powerful</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>&amp;Save as</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionFind_brand">
+   <property name="text">
+    <string>&amp;Find brand</string>
+   </property>
+  </action>
+  <action name="actionPrice_Segment">
+   <property name="text">
+    <string>&amp;Price Segment</string>
+   </property>
+  </action>
+  <action name="actionPowerful_Red">
+   <property name="text">
+    <string>&amp;Powerful Red</string>
+   </property>
+  </action>
+  <action name="actionCheapest_Black">
+   <property name="text">
+    <string>&amp;Cheapest Black</string>
+   </property>
+  </action>
+  <action name="actionMax_Price_Color">
+   <property name="text">
+    <string>&amp;Max Price Color</string>
+   </property>
+  </action>
+  <action name="actionMin_Price_Color">
+   <property name="text">
+    <string>&amp;Min Price Color</string>
+   </property>
+  </action>
+  <action name="action_Ukrainian">
+   <property name="text">
+    <string>&amp;Ukrainian</string>
+   </property>
+  </action>
+  <action name="action_English">
+   <property name="text">
+    <string>&amp;English</string>
+   </property>
+  </action>
+  <action name="actionUkrainian">
+   <property name="text">
+    <string>&amp;Ukrainian</string>
+   </property>
+  </action>
+  <action name="action_English_2">
+   <property name="text">
+    <string>&amp;English</string>
+   </property>
+  </action>
+  <action name="actionTest">
+   <property name="text">
+    <string>Test</string>
+   </property>
+  </action>
+  <action name="actionUkrainian_2">
+   <property name="text">
+    <string>&amp;Ukrainian</string>
+   </property>
+  </action>
+  <action name="action_English_3">
+   <property name="text">
+    <string>&amp;English</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

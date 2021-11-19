@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>carIcon</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Shapes/Shape1.png</file>
+        <file>Shapes/Shape2.png</file>
+        <file>Shapes/Shape3.png</file>
+        <file>Shapes/Shape41.png</file>
+        <file>Shapes/Shape4.png</file>
+    </qresource>
+</RCC>
